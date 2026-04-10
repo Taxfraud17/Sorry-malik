@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>I'm Sorry Anshika ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive;
+      background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
+      text-align: center;
+      color: #fff;
+    }
+
+    .container {
+      margin-top: 100px;
+    }
+
+    h1 {
+      font-size: 3em;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    p {
+      font-size: 1.5em;
+      margin: 20px;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    button {
+      padding: 15px 25px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 25px;
+      background-color: #ff6f91;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #ff3e6c;
+    }
+
+    .heart {
+      font-size: 50px;
+      animation: beat 1s infinite;
+    }
+
+    @keyframes beat {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="heart">❤️</div>
+    <h1>I'm Really Sorry Anshika 😔</h1>
+        <p>Please forgive me ❤️ I love you sooo much.</p>
+    <p>This Sunday, I’ll do uthak bethak as punishment for being sorry 😭🙏</p>
+    
+    <button onclick="forgive()">Click if you forgive me 🥺</button>
+  </div>
+
+  <script>
+    function forgive() {
+      document.body.innerHTML = `
+        <div class="container">
+          <h1>YAYYY ❤️😭</h1>
+          <p>You just made me the happiest person alive!</p>
+          <p>I LOVE YOU ANSHIKA 💖</p>
+        </div>
+      `;
+    }
+  </script>
+
+</body>
+</html>
